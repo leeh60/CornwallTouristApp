@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Progressive Web App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall Tourist App </span>
+</header>
+    <div class="Main">
+      <div class="Spinner">
+        <div class="Spinner-layer">
+          <div class="Spinner-circleClipper Spinner-circleClipper--right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Spinner-circleClipper Spinner-circleClipper--left"></div>
+  </progressive-app>
+  
+              <h3>Form</h3>
+            <form id="CornwallForm">
+              <p>
+                <label for="name">Name: </label>
+                <input name="name" />
+              </p>
+
+              <p>
+                <label for="email">Email: </label>
+                <input name="email" type="email" />
+              </p>
+
+              <p>
+                <label for="question">Question: </label>
+                <input name="question" />
+              </p>
+
+              <p>
+                <input type="submit" value="Ask" />
+              </p>
+            </form>
+  <script src="script.js"></script>
+</body>
+</html>
