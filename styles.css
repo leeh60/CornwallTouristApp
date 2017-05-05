@@ -32,6 +32,13 @@ p {
 	  border: 5px solid red;
 }
 
+#text {
+	color: #fff;
+	
+	font-size: 48px;
+	text-align: center;
+}
+
 .Container2 {
 	width: 100%;
 	height:200px;
