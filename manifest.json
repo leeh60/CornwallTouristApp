@@ -1,5 +1,5 @@
 {
- "name": "CornwallApp",
+ "name": "Cornwall's Tourist App",
     "short_name": "CornwallApp",
     "description": "A Cornwall Tourist App that gives people places to eat, drink etc in a particular area in Cornwall",
   "start_url": "./index.html?utm=homescreen",
