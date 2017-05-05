@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Progressive Web App</title>
+  <title>Newquay Info</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="description" content="Cornwall App">
   <meta name="apple-mobile-web-app-title" content="Short Title" />
@@ -40,6 +40,7 @@
 <h2> Info on Newquay </h2>
 
  <div class="newquay"><img src="newquay.jpg" /></div>
+ <h2> Info on Newquay </h2> <br /> <br />
 <div id="newquay-text"> Newquay on Cornwall’s Atlantic Coast -voted “one of the nation's favourite seaside towns” in the prestigious Which Holiday Survey, “best family holiday destination” by readers of COAST magazine and has one of the UK's top ten beaches by Trip Advisor. Newquay’s laid back charm is here for everyone to enjoy.
 
 Whether you’re looking for a contemporary self catering apartment, a high quality holiday park to bring your camper, caravan or tent, great value bed and breakfast or a top quality hotel and spa, Newquay has it all. </div> <br /> <br />
@@ -49,9 +50,9 @@ Whether you’re looking for a contemporary self catering apartment, a high qual
  <div id="map-container" style="height: 300px;"></div>
                 <script>
                 function initMap() {
-                    var myLocation = {lat: 50.414963, lng: -5.084430};
+                    var myLocation = {lat: 50.414924, lng: -5.083417};
                     var map = new google.maps.Map(document.getElementById('map-container'), {
-                    zoom: 2,
+                    zoom: 15,
                     center: myLocation
                     });
                     var marker = new google.maps.Marker({
@@ -61,7 +62,7 @@ Whether you’re looking for a contemporary self catering apartment, a high qual
                 }
                 </script>
                 <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4i0htRG8tTVPOCWK0pgYT37mWWEixnEU&callback=initMap">
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap">
                 </script>
 
 <script src="script.js"></script>
