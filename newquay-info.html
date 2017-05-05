@@ -36,16 +36,30 @@
 <span class="title-header"> Cornwall's Tourist guide </span>
 </header>
 
-<h1> Cornwall's Tourist guide. </h1>
-<h2> Please click one of the places in Cornwall below to find out more </h2>
+<h1> Newquay </h1>
+<h2> Info on Newquay </h2>
 
- <div class="Container1"><a href="newquay.html"><img src="newquay.jpg" alt="" />
-<div id="text1"> Newquay </div></a></div>
-<div class="Container2"> <a href="padstow.html"><img src="padstow1.jpg" alt="" />
-<div id="text1"> Padstow </div></a></div>
-<div class="Container3"> <a href="st-ives.html"><img src="st-ives.jpg" alt="" />
-<div id="text1"> St Ives </div></a></div>
+ <div class="newquay"><img src="newquay.jpg" /></div>
+<div id="newquay-text"> Newquay on Cornwall’s Atlantic Coast -voted “one of the nation's favourite seaside towns” in the prestigious Which Holiday Survey, “best family holiday destination” by readers of COAST magazine and has one of the UK's top ten beaches by Trip Advisor. Newquay’s laid back charm is here for everyone to enjoy.
 
+Whether you’re looking for a contemporary self catering apartment, a high quality holiday park to bring your camper, caravan or tent, great value bed and breakfast or a top quality hotel and spa, Newquay has it all. </div>
+ <div id="map-container" style="height: 300px;"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.414963, lng: -5.084430};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 2,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4i0htRG8tTVPOCWK0pgYT37mWWEixnEU&callback=initMap">
+                </script>
 
 <script src="script.js"></script>
 </body>
