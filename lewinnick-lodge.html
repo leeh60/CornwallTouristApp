@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Progressive Web App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+</header>
+
+<h1> Lewinnick Lodge - Restaurant </h1>
+
+ <div class="newquay"><img src="lewennick.jpg" /></div>
+ <h2> Lewinnick Lodge </h2>
+<div id="newquay-text"> Perched on the craggy cliffs of the Pentire peninsula, drink in the views whilst you dine in our restaurant and feast upon the striking sea through floor to ceiling glass. Whether dining in the restaurant, bar, beer garden or sun terrace, the ocean views from our restaurant are unrivalled, gaze from Fistral beach to the heady horizon beyond the Atlantic whilst breathing in the clear sea air. <br /> <br />
+We specialise in seafood, much of it from the waters surrounding Cornwall, and have effortlessly married our British menu with an eclectic selection of crisp wines, premium lagers, local ales and ciders.　From fresh locally sourced products our exciting menu has something for everyone. <br /> <br />.The lodge is open for breakfast at 9am and serves throughout the day until 10pm (10.30pm in the summer).  <br /> <br /> </div>
+<h2> Road Directions </h2>
+
+<div id="newquay-text"> From A30 take A39 exit toward Newquay/A392, At Highgate Hill Roundabout, take the 3rd exit onto A39. At the next roundabout take the 2nd exit onto A392 (go through 2 roundabouts). At the roundabout, take the 2nd exit onto A392/Trevemper road (go through 1 roundabout). <br /> <br /> At the next roundabout, take the 1st exit onto Pentire road. Continue to the end of the road (1 mile), turn right then left, follow the lane down to ‘The Lodge’.
+</div>
+ <div id="map-container" style="height: 300px;"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.414963, lng: -5.084430};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 2,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4i0htRG8tTVPOCWK0pgYT37mWWEixnEU&callback=initMap">
+                </script>
+
+<script src="script.js"></script>
+</body>
+</html>

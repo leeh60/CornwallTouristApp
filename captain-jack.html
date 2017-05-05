@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Progressive Web App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="Cornwall App">
+  <meta name="apple-mobile-web-app-title" content="Short Title" />
+<meta name="mobile-web-app-capable" content="yes">
+
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<span class="hamburger-icon">
+</span>
+<span class="title-header"> Cornwall's Tourist guide </span>
+</header>
+
+<h1> Captain Jacks - Restaurant </h1>
+
+ <div class="newquay"><img src="captain-jack.jpg" /></div>
+<h2> Captain Jack </h2>
+<div id="newquay-text"> Here at Captain Jack's we strive for the best quality ingredients, sourcing from local butchers, fishmongers, fruit & vegetable suppliers, bakers, distilleries & breweries. Here at Captain Jack's we pride ourselves on the best quality Cornish seafood - locally sourced Mackerel, Lobsters, Prawns, Scallops, Crab Claws, Place, Megrim, Sole and Sea Bass all appear on the changing specials, daily. <br /> <br />
+
+We vary our seafood depending on what's available so we can guarantee the freshest fish all cooked to order and priced reasonably. With such a vibrant harbour just minutes away, why not capitalise on it! <br /> <br />
+
+Alongside our regular menu we have daily specials that include our 'Catch of the Day' & home made desserts alongside other speciality dishes that we're laying on that evening. <br /> <br />
+
+Our friendly waiting staff are always on hand for your every need & can even help you pair wine to your meal should you require it. <br /> <br /></div>
+<h2> Road Directions </h2>
+
+<div id="newquay-text">From the A30, take the A392 to Newquay until you reach Quintrell Downs roundabout (approx. 4 miles) take the second exit (straight on) heading towards Fistral Bay. Follow this road (still the A392) passing Hendra Caravan Park for 1 mile until you reach the Morrisons roundabout, take the first exit (straight on, Morrisons will be on your right), at the next roundabout take the second exit (right turn) still heading towards Fistral Bay. You are now entering Newquay, pass the Texaco garage on your right, at the next roundabout take the second exit (right turn). <br /> <br /> Proceed along this road (Trevemper Road) passing the boating lake on your left. At the next twin mini roundabout take the first exit (left) and proceed up the hill (Trenance Road). Over the brow of the hill at the traffic lights turn left, this is Mount Wise and is now two-way. Proceed along Mount Wise taking the third turning on your right onto Marcus Hill. Drive down Marcus Hill, Newquay Meadery is on your right side, just after the right turn (Seymour Avenue) and opposite Newquay Tourist Information Centre.</div>
+
+ <div id="map-container" style="height: 300px;"></div>
+                <script>
+                function initMap() {
+                    var myLocation = {lat: 50.414963, lng: -5.084430};
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
+                    zoom: 2,
+                    center: myLocation
+                    });
+                    var marker = new google.maps.Marker({
+                    position: myLocation,
+                    map: map
+                    });
+                }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4i0htRG8tTVPOCWK0pgYT37mWWEixnEU&callback=initMap">
+                </script>
+
+<script src="script.js"></script>
+</body>
+</html>
