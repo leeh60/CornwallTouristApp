@@ -35,34 +35,34 @@ p {
 
 
 		.Container1 {
-	width: 100%;
+	width: 90%;
 	height:270px;
 	background-color: #000;
 	margin-top: 100px;
 	  position: absolute;
-	  margin-left:0;
+	  margin-left:5%;
 	  left:0;
 	  border: 5px solid red;
 }
 
 		.Container2 {
-	width: 100%;
+	width: 90%;
 	height:270px;
 	background-color: #000;
 	margin-top: 420px;
 	  position: absolute;
-	  margin-left:0;
+	  margin-left:5%;
 	  left:0;
 	  border: 5px solid red;
 }
 
 		.Container3 {
-	width: 100%;
+	width: 90%;
 	height:270px;
 	background-color: #000;
 	margin-top: 740px;
 	  position: absolute;
-	  margin-left:0;
+	  margin-left:5%;
 	  left:0;
 	  border: 5px solid red;
 }
@@ -97,35 +97,35 @@ p {
 
 
 		.Container1 {
-	width: 100%;
+	width: 90%;
 	height:270px;
 	background-color: #000;
 	margin-top: 100px;
 	  position: absolute;
-	  margin-left:0;
+	  margin-left:5%;
 	  left:0;
 	  border: 5px solid red;
 }
 
 		.Container2 {
-	width: 100%;
+	width: 90%;
 	height:270px;
 	background-color: #000;
 	margin-top: 420px;
 	  position: absolute;
-	  margin-left:0;
+	  margin-left:5%;
 	  left:0;
 	  border: 5px solid red;
 }
 
 		.Container3 {
-	width: 100%;
+	width: 90%;
 	height:270px;
 	background-color: #000;
 	margin-top: 740px;
 	  position: absolute;
-	  margin-left:0;
-	  left:0;
+	  margin-left:5%;
+
 	  border: 5px solid red;
 }
 
