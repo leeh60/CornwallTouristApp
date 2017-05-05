@@ -66,23 +66,23 @@
   Saver Ticket (2 Adults and 2 Children) - £42.60 <br />
   Under 3's are free </div> <br /> <br />
   <h2> Map </h2> <br /> <br />
- <div id="map-container" style="height: 300px;"></div>
-                <script>
-                function initMap() {
-                    var myLocation = {lat: 50.414963, lng: -5.084430};
-                    var map = new google.maps.Map(document.getElementById('map-container'), {
-                    zoom: 2,
-                    center: myLocation
-                    });
-                    var marker = new google.maps.Marker({
-                    position: myLocation,
-                    map: map
-                    });
-                }
-                </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4i0htRG8tTVPOCWK0pgYT37mWWEixnEU&callback=initMap">
-                </script>
+ <div id="map" style="height: 300px;"></div>
+                    <script>
+      function initMap() {
+        var uluru = {lat: 50.410391, lng: -5.066416};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL8_pY3dtgsQXjq8hvFyrdpv9-DQmKNMM&callback=initMap">
+    </script>
 
 <script src="script.js"></script>
 </body>

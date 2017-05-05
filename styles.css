@@ -168,6 +168,11 @@ h2 {
 	text-align: center;
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
 }
 	
 	@media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -294,6 +299,11 @@ h2 {
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 	}
+	
+	#map {
+        height: 400px;
+        width: 100%;
+       }
 	}
 
 		
