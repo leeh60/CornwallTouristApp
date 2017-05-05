@@ -28,9 +28,12 @@ p {
 
 #text1 {
 	color: #fff;
-	text-decoration: none;
 	font-size: 30px;
 	text-align: center;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 
@@ -38,7 +41,7 @@ p {
 	width: 90%;
 	height:270px;
 	background-color: #000;
-	margin-top: 100px;
+	margin-top: 50px;
 	  position: absolute;
 	  margin-left:5%;
 	  left:0;
@@ -49,7 +52,7 @@ p {
 	width: 90%;
 	height:270px;
 	background-color: #000;
-	margin-top: 420px;
+	margin-top: 370px;
 	  position: absolute;
 	  margin-left:5%;
 	  left:0;
@@ -60,7 +63,29 @@ p {
 	width: 90%;
 	height:270px;
 	background-color: #000;
-	margin-top: 740px;
+	margin-top: 690px;
+	  position: absolute;
+	  margin-left:5%;
+	  left:0;
+	  border: 5px solid red;
+}
+
+		.Container4 {
+	width: 90%;
+	height:270px;
+	background-color: #000;
+	margin-top: 1010px;
+	  position: absolute;
+	  margin-left:5%;
+	  left:0;
+	  border: 5px solid red;
+}
+
+		.Container5 {
+	width: 90%;
+	height:300px;
+	background-color: #000;
+	margin-top: 1340px;
 	  position: absolute;
 	  margin-left:5%;
 	  left:0;
@@ -82,6 +107,27 @@ p {
 .Container3 img {
    width: 100%;
    height: 230px;
+}
+
+.Container4 img {
+   width: 100%;
+   height: 230px;
+}
+
+.Container5 img {
+   width: 100%;
+   height: 230px;
+}
+
+h1 {
+	margin-top: 80px;
+	text-align: center;
+
+}
+
+h2 {
+	text-align: center;
+
 }
 
 }
@@ -100,7 +146,7 @@ p {
 	width: 90%;
 	height:270px;
 	background-color: #000;
-	margin-top: 100px;
+	margin-top: 50px;
 	  position: absolute;
 	  margin-left:5%;
 	  left:0;
@@ -111,7 +157,7 @@ p {
 	width: 90%;
 	height:270px;
 	background-color: #000;
-	margin-top: 420px;
+	margin-top: 370px;
 	  position: absolute;
 	  margin-left:5%;
 	  left:0;
@@ -122,10 +168,32 @@ p {
 	width: 90%;
 	height:270px;
 	background-color: #000;
-	margin-top: 740px;
+	margin-top: 690px;
 	  position: absolute;
 	  margin-left:5%;
+	  left:0;
+	  border: 5px solid red;
+}
 
+		.Container4 {
+	width: 90%;
+	height:270px;
+	background-color: #000;
+	margin-top: 1010px;
+	  position: absolute;
+	  margin-left:5%;
+	  left:0;
+	  border: 5px solid red;
+}
+
+		.Container5 {
+	width: 90%;
+	height:300px;
+	background-color: #000;
+	margin-top: 1340px;
+	  position: absolute;
+	  margin-left:5%;
+	  left:0;
 	  border: 5px solid red;
 }
 
@@ -145,6 +213,25 @@ p {
    width: 100%;
    height: 230px;
 }
+
+.Container4 img {
+   width: 100%;
+   height: 230px;
+}
+
+.Container5 img {
+   width: 100%;
+   height: 230px;
+}
+
+h1 {
+	margin-top: 80px;
+	text-align: center;
+
+}
+
+h2 {
+	text-align: center;
 
 }
 
