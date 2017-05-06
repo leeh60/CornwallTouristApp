@@ -210,17 +210,19 @@ h2 {
 	   
 	   	   #Name {
 		   border: 2px solid black;
-		   width: 100%;
+		   width: 60%;
+		   height:25px;
 	   }
 	   
 	   #Email {
 		   border: 2px solid black;
-		   width: 100%;
+		   width: 60%;
+		   height: 25px;
 	   }
 	   
 	   	   #Comments {
 		   border: 2px solid black;
-		   width: 100%;
+		   width: 60%;
 	   }
 	   
 	   button {

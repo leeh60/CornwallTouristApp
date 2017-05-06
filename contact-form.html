@@ -46,7 +46,6 @@ else if (complete=true)
 }
 -->
 </script>
-
 <script>
 function save() {
 var Name = document.getElementById('Name').value;
@@ -62,11 +61,10 @@ localStorage.setItem('Comments', Comments);
   	function set() {
   			document.getElementById('Name').value = localStorage.getItem('Name');
   			document.getElementById('Email').value = localStorage.getItem('Email');
-			document.getElementById('Comments').value=localStorage.getItem('Comments');
+			document.getElementById('Comments').value = localStorage.getItem('Comments');
   		}
   	
 </script>
-
 </head>
 <body>
 <header>
@@ -87,18 +85,20 @@ localStorage.setItem('Comments', Comments);
   <br />
   <br />
   <br />
-  <label for="Email">Email Address</label> 
+  <label for="email">Email Address</label> 
   <br />
-  <input type="email" name="Email" id="Email" />
+  <input type="Email" name="Email" id="Email" />
   <br />
   <br />
   <br />
   <label for="Comments">Question / Feedback Form</label> 
   <br />
-  <textarea name="comments" id="Comments" cols="37" rows="5"></textarea>
+  <textarea name="text" id="Comments" cols="37" rows="5"></textarea>
   <br />
   <br />
-  <br />
+</p>
+<p><br />
+</p>
 <button onclick="save()"> send </button>
 
 
