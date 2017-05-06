@@ -26,41 +26,71 @@
 <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+<!--
+function check_it()
+{
+	var complete=true
+	var theemail=document.form1.Email.value;
+	if ((theemail.indexOf("@") ==-1)||(theemail.indexOf(".") ==-1))
+{
+	alert("You have not entered a valid email address");
+	complete=false;
+}
+else if (complete=true)
+{
+	confirm ("Pressing OK will send off your Questiopn./n You will receive an email in the next several days");
+     }
+     return complete;
+	 
+}
+-->
+</script>
+<script>
+function save() {
+var Name = document.getElementById('Name').value;
+localStorage.setItem('Name', Name);
 
+var Email = document.getElementById('Email').value;
+localStorage.setItem('Email', Email);
+
+var Comments = document.getElementById('Comments').value;
+localStorage.setItem('Comments', Comments);
+}
+</script>
 </head>
+<body>
 <header>
 <span class="hamburger-icon">
 </span>
-<span class="title-header"> Cornwall's Tourist guide </span>
+<span class="title-header"> Cornwall's Feedback Page </span>
 </header>
 
-<header>
-  <h1>Hamburger Menu</h1>
-  <nav>
-    <a href="#" class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </a>
-    <ul class="clearfix menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
-</header>
+<body>
 
-<h1> Cornwall's Tourist guide. </h1>
-<h2> Please click one of the places in Cornwall below to find out more </h2>
-
- <div class="Container1"><a href="newquay.html"><img src="newquay.jpg" alt="" />
-<div id="text1"> Newquay </div></a></div>
-<div class="Container2"> <a href="padstow.html"><img src="padstow1.jpg" alt="" />
-<div id="text1"> Padstow </div></a></div>
-<div class="Container3"> <a href="st-ives.html"><img src="st-ives.jpg" alt="" />
-<div id="text1"> St Ives </div></a></div>
+<h1> Cornwall's Feedback Form. </h1>
+<h2> If you have any Feedback that could improve this Cornwall's Tourist Guide or you have any Questions then please feel free to fill out this form and someone will be in touch with you ASAP. </h2>
+<br />
+<form id="form1" name="form1" method="post" action="#" onsubmit="return check_it()">
+<label for="Name">Name</label>
+<br />
+<input type="text" name="Name" id="Name" />
+<br />
+<br />
+<br />
+<label for="Email">Email Address</label> 
+<br />
+<input type="email" name="Email" id="Email" />
+<br />
+<br />
+<br />
+<label for="Comments">Question / Feedback Form</label> 
+<br />
+<textarea name="comments" id="Comments" cols="37" rows="5"></textarea>
+<br />
+<br />
+<br />
+<button onclick="save()"> send </button>
 
 
 <script src="script.js"></script>

@@ -11,6 +11,36 @@
 	  left:0;
     }
 	
+	  .hamburger {
+    padding: 15px;
+    display: block;
+  }
+
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+  
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+  
+  .slide-down {
+    height: 262px;
+  }
+}
+	
 	#loader {
     position: absolute;
     left: 50%;
@@ -172,6 +202,34 @@ h2 {
         height: 400px;
         width: 100%;
        }
+	   
+	   #form1 {
+		   text-align: center;
+		   margin-top: 10px;
+	   }
+	   
+	   	   #Name {
+		   border: 2px solid black;
+		   width: 100%;
+	   }
+	   
+	   #Email {
+		   border: 2px solid black;
+		   width: 100%;
+	   }
+	   
+	   	   #Comments {
+		   border: 2px solid black;
+		   width: 100%;
+	   }
+	   
+	   button {
+		   background-color: #000;
+		   color: #fff;
+		   height: 40px;
+		   width: 100px;
+	   }
+	   
 
 }
 	
