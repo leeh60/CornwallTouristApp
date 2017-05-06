@@ -29,13 +29,15 @@
 <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
 <header>
 <span class="hamburger-icon">
 </span>
 <span class="title-header"> Cornwall's Tourist guide </span>
 </header>
+<div id="loader"></div>
 
+<div style="display:none;" id="myDiv" class="animate-bottom">
 <h1> Newquay </h1>
 <h2> Please click one of the options below to find out more about Newquay </h2>
 
@@ -49,6 +51,20 @@
 <div id="text1">Attractions in Newquay </div></a></div>
 <div class="Container5"> <a href="newquay-accomodation.html"><img src="newquay-hotel.jpg" alt="" />
 <div id="text1">Accomodation in Newquay </div></a></div>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 
 <script src="script.js"></script>

@@ -28,16 +28,17 @@
 <link rel="stylesheet" href="styles.css">
 
 </head>
-<body onload="myFunction()">    
-     <div id="loader"></div>
+<body onload="myFunction()" style="margin:0;">
 <header>
 <span class="hamburger-icon">
 </span>
 <span class="title-header"> Cornwall's Tourist guide </span>
 </header>
+<div id="loader"></div>
 
-<h1> Cornwall's Tourist guide. </h1>
-<h2> Please click one of the places in Cornwall below to find out more </h2>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h1> Cornwall's Tourist guide. </h1>
+  <h2> Please click one of the places in Cornwall below to find out more </h2>
 
  <div class="Container1"><a href="newquay.html"><img src="newquay.jpg" alt="" />
 <div id="text1"> Newquay </div></a></div>
@@ -45,6 +46,20 @@
 <div id="text1"> Padstow </div></a></div>
 <div class="Container3"> <a href="st-ives.html"><img src="st-ives.jpg" alt="" />
 <div id="text1"> St Ives </div></a></div>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 
 <script src="script.js"></script>
