@@ -46,6 +46,7 @@ else if (complete=true)
 }
 -->
 </script>
+
 <script>
 function save() {
 var Name = document.getElementById('Name').value;
@@ -57,7 +58,15 @@ localStorage.setItem('Email', Email);
 var Comments = document.getElementById('Comments').value;
 localStorage.setItem('Comments', Comments);
 }
+
+  	function set() {
+  			document.getElementById('Name').value = localStorage.getItem('Name');
+  			document.getElementById('Email').value = localStorage.getItem('Email');
+			document.getElementById('Comments').value=localStorage.getItem('Comments');
+  		}
+  	
 </script>
+
 </head>
 <body>
 <header>
@@ -70,26 +79,26 @@ localStorage.setItem('Comments', Comments);
 
 <h1> Cornwall's Feedback Form. </h1>
 <h2> If you have any Feedback that could improve this Cornwall's Tourist Guide or you have any Questions then please feel free to fill out this form and someone will be in touch with you ASAP. </h2>
-<br />
-<form id="form1" name="form1" method="post" action="#" onsubmit="return check_it()">
-<label for="Name">Name</label>
-<br />
-<input type="text" name="Name" id="Name" />
-<br />
-<br />
-<br />
-<label for="Email">Email Address</label> 
-<br />
-<input type="email" name="Email" id="Email" />
-<br />
-<br />
-<br />
-<label for="Comments">Question / Feedback Form</label> 
-<br />
-<textarea name="comments" id="Comments" cols="37" rows="5"></textarea>
-<br />
-<br />
-<br />
+<p><br />
+  <form id="form1" name="form1" method="post" action="#" onsubmit="return check_it()">
+  <label for="Name">Name</label>
+  <br />
+  <input type="text" name="Name" id="Name" />
+  <br />
+  <br />
+  <br />
+  <label for="Email">Email Address</label> 
+  <br />
+  <input type="email" name="Email" id="Email" />
+  <br />
+  <br />
+  <br />
+  <label for="Comments">Question / Feedback Form</label> 
+  <br />
+  <textarea name="comments" id="Comments" cols="37" rows="5"></textarea>
+  <br />
+  <br />
+  <br />
 <button onclick="save()"> send </button>
 
 
